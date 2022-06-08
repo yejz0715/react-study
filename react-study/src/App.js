@@ -2,6 +2,7 @@ import React from "react";
 import ColorRange from "./Compornent/ColorRange"; //import :export로 보낸 모듈 가져오는 기능
 import Counter from "./Compornent/Counter"; //import 식별자(변수,함수,클래스) from 경로
 import ScoreManipulation from "./CompornentTest/ScoreManipulation";
+import SlotMachine from "./CompornentTest/SlotMachine";
 function App() {
   //컴포넌트
   return (
@@ -12,6 +13,8 @@ function App() {
       <br />
       <hr />
       <ScoreManipulation />
+      <br />
+      <SlotMachine />
     </div>
   );
 }
