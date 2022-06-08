@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 function ScoreManipulation() {
   const [num, setNum] = useState(0);
-  const [leftNum, setLeftNum] = useState(" ");
-  const [rightNum, setRightNum] = useState(" ");
+  const [leftNum, setLeftNum] = useState("_ ");
+  const [rightNum, setRightNum] = useState("_");
 
   function handleMius() {
     if (num === 0) {
