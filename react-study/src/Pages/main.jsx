@@ -1,6 +1,7 @@
 import React from "react";
 import ColorRange from "../Component/ColorRange";
 import Counter from "../Component/Counter";
+import FriendList from "../Component/FriendList";
 import RadioButton from "../Component/RadioButton";
 import ScoreManipulation from "../Component/ScoreManipulation";
 import SlotMachine from "../Component/SlotMachine";
@@ -14,6 +15,7 @@ const Main = () => {
       <br />
       <ColorRange />
       <br />
+      <UserList />
       <hr />
       <ScoreManipulation />
       <br />
@@ -21,7 +23,7 @@ const Main = () => {
       <br />
       <RadioButton />
       <br />
-      <UserList />
+      <FriendList />
       <br />
     </div>
   );
