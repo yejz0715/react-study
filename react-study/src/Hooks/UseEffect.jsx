@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 function UseEffect() {
   const sayHello = () => console.log("hello");
   const [number, setNumber] = useState(0);
-  const [aNumber, setAnumber] = useState(0);
+  const [num, setNum] = useState(0);
   useEffect(sayHello, [number]);
   //[number]가 바뀔때마다 sayHello 함수 실행
 
@@ -23,7 +23,7 @@ function UseEffect() {
     <div>
       <h2>UseEffect</h2>
       <button onClick={() => setNumber(number + 1)}>{number}</button>
-      <button onClick={() => setAnumber(aNumber - 1)}>{aNumber}</button>
+      <button onClick={() => setNum(num - 1)}>{num}</button>
     </div>
   );
 }

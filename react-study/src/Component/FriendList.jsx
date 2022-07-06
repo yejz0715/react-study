@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 function FriendList() {
   const [name, setName] = useState("");
-  const [list, setList] = useState("");
+  const [list, setList] = useState([]);
   const handleAddOne = () => {
     setList(...list, name);
+    setName("");
   };
   const handleAddTwo = () => {
     setList(...list, name);
+    setName("");
   };
   const handleAddThree = () => {
     setList(...list, name);
+    setName("");
   };
   const handleDeleteUser = () => {
     setName("");
@@ -21,6 +24,7 @@ function FriendList() {
     <div>
       <h2>Friend List</h2>
       <input
+        value={name}
         type="text"
         placeholder="친구의 이름을 입력하세요"
         onChange={handleChangeUser}

@@ -20,7 +20,7 @@ function Counter() {
     }
     setNum((prev) => prev + 1);
   }
-  function hanledReset() {
+  function handleReset() {
     setNum(0);
   }
 
@@ -30,7 +30,7 @@ function Counter() {
       <label>{num}</label>
       <button onClick={handleMinus}>-1</button>
       <button onClick={handlePlus}>+1</button>
-      <button onClick={hanledReset}>reset</button>
+      <button onClick={handleReset}>reset</button>
       <RandomBox index={num} plus={handlePlus} />
     </div>
     //RandomBox.jsx에서 Counter.jsx 의 {num}을 가져와 index로 사용할것이다

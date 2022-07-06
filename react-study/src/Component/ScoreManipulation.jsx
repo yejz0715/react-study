@@ -5,7 +5,7 @@ function ScoreManipulation() {
   const [leftNum, setLeftNum] = useState("_ ");
   const [rightNum, setRightNum] = useState("_");
 
-  function handleMius() {
+  function handleMinus() {
     if (num === 0) {
       return;
     }
@@ -26,13 +26,13 @@ function ScoreManipulation() {
 
   return (
     <div>
-      <p style={{ fontSize: "20px", fontWeight: "bold" }}>Score Maiipulation</p>
+      <p style={{ fontSize: "20px", fontWeight: "bold" }}>Score Manipulation</p>
       <p style={{ fontSize: "30px", paddingLeft: "50px" }}>
         {leftNum}
         {rightNum}점
       </p>
       <span>{num}</span>&nbsp;
-      <button onClick={handleMius}>-</button>&nbsp;
+      <button onClick={handleMinus}>-</button>&nbsp;
       <button onClick={handlePlus}>+</button>&nbsp;
       <button onClick={handleLeft}>L 입력</button>
       <button onClick={handleRight}>R 입력</button>
