@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hooks from "./Pages/hooks";
 import Main from "./Pages/main";
 import PageList from "./Pages/PageList";
+import PropsPage from "./Pages/props";
 const AppRouter = () => {
   return (
     //구조 Router(부모컴포넌트)-Routes-Route(path,element)
@@ -15,6 +16,7 @@ const AppRouter = () => {
         {/*path:상대경로 지정 element속성:컴포넌트 */}
         <Route path="/study" element={<Main />} />
         <Route path="/hooks" element={<Hooks />} />
+        <Route path="/props" element={<PropsPage />} />
       </Routes>
     </Router>
   );
