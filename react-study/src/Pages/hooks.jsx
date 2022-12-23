@@ -1,13 +1,15 @@
 import React from "react";
-import UseEffect from "../Hooks/UseEffect";
-import UseState from "../Hooks/UseState";
+import UseEffectNum from "../Hooks/UseEffect/UseEffectNum";
+import User from "../Hooks/UseEffect/User";
+import UseStateNum from "../Hooks/UseState/UseStateNum";
 const Hooks = () => {
   return (
     <div>
       <h1>HooksPage</h1>
-      <UseEffect />
+      <UseEffectNum />
+      <User />
       <br />
-      <UseState />
+      <UseStateNum />
     </div>
   );
 };

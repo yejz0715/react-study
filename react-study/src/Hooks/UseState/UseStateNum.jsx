@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //1 useState사용
-function UseState() {
+function UseStateNum() {
   const [item, setItem] = useState(1);
   const incrementItem = () => setItem(item + 1);
   const decrementItem = () => setItem(item - 1);
@@ -42,4 +42,4 @@ class AppUgly extends React.Component {
     });
   };
 }
-export default UseState;
+export default UseStateNum;

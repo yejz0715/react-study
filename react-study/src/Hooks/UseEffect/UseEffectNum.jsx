@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 //import ReactDOM from "react-dom";
 
-function UseEffect() {
+function UseEffectNum() {
   const sayHello = () => console.log("hello");
   const [number, setNumber] = useState(0);
   const [num, setNum] = useState(0);
   useEffect(sayHello, [number]);
+
+  const handleReset = () => {
+    setNum(0);
+    setNumber(0);
+  };
   //[number]가 바뀔때마다 sayHello 함수 실행
 
   //useEffect(function,deps)
@@ -24,8 +29,9 @@ function UseEffect() {
       <h2>UseEffect</h2>
       <button onClick={() => setNumber(number + 1)}>{number}</button>
       <button onClick={() => setNum(num - 1)}>{num}</button>
+      <button onClick={handleReset}>reset</button>
     </div>
   );
 }
 
-export default UseEffect;
+export default UseEffectNum;
