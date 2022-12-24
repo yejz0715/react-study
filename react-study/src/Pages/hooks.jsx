@@ -2,6 +2,7 @@ import React from "react";
 import UseEffectNum from "../Hooks/UseEffect/UseEffectNum";
 import User from "../Hooks/UseEffect/User";
 import UseStateNum from "../Hooks/UseState/UseStateNum";
+import UseStateName from "../Hooks/UseState/UseStateName";
 const Hooks = () => {
   return (
     <div>
@@ -10,6 +11,8 @@ const Hooks = () => {
       <User />
       <br />
       <UseStateNum />
+      <br />
+      <UseStateName />
     </div>
   );
 };
